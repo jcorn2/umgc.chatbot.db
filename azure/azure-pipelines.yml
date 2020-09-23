@@ -16,7 +16,7 @@ variables:
 steps:
 - task: CmdLine@2
   inputs:
-    script: 'make build-env' 
+    script: 'make all' 
 
 - task: CmdLine@2
   condition: and(succeeded(), eq(variables.isMain, true))
