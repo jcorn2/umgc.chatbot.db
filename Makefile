@@ -12,4 +12,4 @@ all:
 	docker build -f ./docker/Dockerfile -t $(DOCKER_IMG) .
 
 start:
-	docker run --net=host --rm --name mysql $(DOCKER_IMG)
+	docker run --net=host --rm -d --name mysql $(DOCKER_IMG)
