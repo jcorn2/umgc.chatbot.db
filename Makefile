@@ -25,7 +25,7 @@ all:
 #
 ####################################################################
 start:
-	docker run --net=host --rm -d --name mysql $(DOCKER_IMG)
+	docker run -p 3306:3306 --rm -d --name mysql $(DOCKER_IMG)
 
 ####################################################################
 #	make push:
