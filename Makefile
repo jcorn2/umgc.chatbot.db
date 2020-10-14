@@ -3,10 +3,10 @@
 ##############################################################
 
 # Build vars
-DOCKER_NAME=chatbot-db
+DOCKER_NAME=umgcchatbot-dev-db
 DOCKER_TAG=latest
 DOCKER_IMG=$(DOCKER_NAME):$(DOCKER_TAG)
-REMOTE_IMG:=docker.io/umgccaps/$(DOCKER_IMG)
+REMOTE_IMG:=docker.io/$(DOCKER_IMG)
 
 # PHONY
 .PHONY: all start clear push help
