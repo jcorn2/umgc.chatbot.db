@@ -21,7 +21,7 @@ steps:
 - task: CmdLine@2
   condition: and(succeeded(), eq(variables.isMain, true))
   inputs:
-    script: 'docker login $(Host) -u $(Username) -p $(Password)'
+    script: 'docker login -u $(DOCKER_USER) -p $(DOCKER_PASSWORD)'
     
 - task: CmdLine@2
   condition: and(succeeded(), eq(variables.isMain, true))
